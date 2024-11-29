@@ -1,0 +1,126 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Solid white background */
+    background-image: url('/project1-zomato/images/tasty.png'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
+/* Header styles */
+header {
+    background-color: #D32F2F; /* Solid red background */
+    padding: 20px;
+    text-align: center;
+}
+
+header .Logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Main content styles */
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff; /* Solid white background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    border-radius: 8px;
+}
+
+/* Investor info section styles */
+.investor-info {
+    text-align: center;
+    color: #333;
+}
+
+.investor-info h1 {
+    color: #D32F2F; /* Red color for headings */
+}
+
+.investor-info h2 {
+    color: #D32F2F; /* Red color for subheadings */
+}
+
+.investor-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.investor-info ul li {
+    margin: 10px 0;
+}
+
+.investor-info button {
+    background-color: #D32F2F; /* Solid red background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.investor-info button:hover {
+    background-color: #b72e2e; /* Darker red on hover */
+}
+
+/* Contact form styles */
+.contact {
+    padding: 20px;
+    background-color: #fff; /* Solid white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact label {
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    background-color: #D32F2F; /* Solid red background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.contact button:hover {
+    background-color: #b72e2e; /* Darker red on hover */
+}
+
+footer {
+    text-align: center;
+    background-color: #D32F2F; /* Solid red background */
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}

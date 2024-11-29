@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Restaurant - Zomato</title>
+    <link rel="stylesheet" href="/project1-zomato/Add Restaurant.css">
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="/project1-zomato/images/logo.png" alt="Zomato Logo">
+        </div>
+        <nav>
+            <ul>
+                <ul>
+                    <li><a href="/project1-zomato/index.html">Home</a></li>
+                    <li><a href="/project1-zomato/Investor Relations.html">Investor Relations</a></li>
+                    <!-- <li><a href="/project1-zomato/Add Restaurant.html">Add Restaurant</a></li> -->
+                    <li><a href="/project1-zomato/Login.html">Login</a></li>
+                    <li><a href="/project1-zomato/Signup.html">Signup</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-restaurant">
+            <h2>Add Your Restaurant</h2>
+            <form id="restaurant-form">
+                <label for="restaurant-name">Restaurant Name:</label>
+                <input type="text" id="restaurant-name" name="restaurant-name" placeholder="Enter restaurant name" required>
+
+                <label for="restaurant-type">Restaurant Type:</label>
+                <input type="text" id="restaurant-type" name="restaurant-type" placeholder="Enter type (e.g., Indian, Chinese, etc.)" required>
+
+                <label for="restaurant-address">Restaurant Address:</label>
+                <textarea id="restaurant-address" name="restaurant-address" placeholder="Enter restaurant address" required></textarea>
+
+                <label for="restaurant-phone">Contact Number:</label>
+                <input type="text" id="restaurant-phone" name="restaurant-phone" placeholder="Enter contact number" required>
+
+                <label for="restaurant-cuisine">Cuisine Type:</label>
+                <input type="text" id="restaurant-cuisine" name="restaurant-cuisine" placeholder="Enter cuisine (e.g., Vegan, Fast Food)" required>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright | All rights reserved</p>
+    </footer>
+
+    <script src="/project1-zomato/Add Restaurant.js"></script>
+</body>
+</html>

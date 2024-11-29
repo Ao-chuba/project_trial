@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investor Relations - Zomato</title>
+    <link rel="stylesheet" href="/project1-zomato/inverstor.css">
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="/project1-zomato/images/logo.png" alt="Zomato Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/project1-zomato/index.html">Home</a></li>
+                <!-- <li><a href="/project1-zomato/Investor Relations.html">Investor Relations</a></li> -->
+                <li><a href="/project1-zomato/Add Restaurant.html">Add Restaurant</a></li>
+                <li><a href="/project1-zomato/Login.html">Login</a></li>
+                <li><a href="/project1-zomato/Signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="investor-info">
+            <h1>Welcome to Zomato Investor Relations</h1>
+            <p>At Zomato, we believe in creating value for our stakeholders through sustained long-term growth and delivering top-quality service to our customers. Here, you can access our latest financial reports, stock performance, and much more.</p>
+            
+            <h2>Financial Reports</h2>
+            <p>Click below to download our latest annual and quarterly reports.</p>
+            <ul>
+                <li><a href="#">Annual Report 2023</a></li>
+                <li><a href="#">Q1 2024 Financial Results</a></li>
+                <li><a href="#">Q2 2024 Financial Results</a></li>
+            </ul>
+
+            <h2>Stock Information</h2>
+            <p>Our stock is listed on the NSE and BSE. You can view the latest stock details here.</p>
+            <button id="show-stock">View Stock Information</button>
+            <div id="stock-info" style="display:none;">
+                <p>Stock Price: ₹1500</p>
+                <p>Market Cap: ₹1.2 Trillion</p>
+                <p>P/E Ratio: 25</p>
+            </div>
+
+            <h2>Company History</h2>
+            <p>Zomato was founded in 2008 and has grown to become one of the leading food-tech companies in India and globally. Our mission is to ensure that every meal is delightful for everyone. From food discovery to delivery, we are committed to excellence.</p>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Investor Relations</h2>
+            <form id="investor-contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Zomato 2024 | All rights reserved</p>
+    </footer>
+
+    <script src="/project1-zomato/investor.js"></script>
+</body>
+</html>

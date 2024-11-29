@@ -1,0 +1,372 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML and Body to take full height */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body {
+    background-color: #f7f7f7; /* Light grey background */
+    background-image: url('/project1-zomato/images/bg.jpeg'); /* Background image */
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep background fixed during scroll */
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push footer to the bottom */
+    height: 100vh; /* Ensure the body takes up the full height */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #D32F2F; /* Red color */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .Logo img {
+    height: 30px; /* Adjust logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFC107; /* Hover color */
+}
+
+/* Main Section */
+main {
+    flex-grow: 1; /* Allow main section to grow and fill available space */
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+main .content p {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main input {
+    padding: 12px;
+    width: 300px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+main input:focus {
+    background-color: #FFC107; /* Focus color */
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #D32F2F; /* Red color */
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    main .content p {
+        font-size: 28px;
+    }
+
+    main input {
+        width: 250px;
+    }
+}
+
+/* Additional styling for the food delivery section */
+.food-delivery {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    color: #333;
+    margin-top: 50px; /* Added margin to move the section down */
+}
+
+.food-delivery h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #D32F2F; /* Red color for headings */
+}
+
+.food-delivery p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delivery-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h3 {
+    font-size: 22px;
+    color: #D32F2F; /* Red color for the subheadings */
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+.delivery-image {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styling for the intro section */
+.intro p {
+    font-size: 25px; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 20px; /* Add space below the text */
+    color: #fff; /* White text color for better contrast */
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.6); /* Optional: Add shadow for better readability */
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: url('https://cdn-icons-png.flaticon.com/512/149/149071.png'), auto; /* Custom cursor image */
+}
+
+/* Link and Button Hover Interactivity */
+a, button {
+    transition: all 0.3s ease;
+}
+
+a:hover, button:hover {
+    cursor: pointer; /* Changes cursor to a hand pointer on hover */
+    transform: scale(1.05); /* Slightly scale button/link on hover for interactivity */
+}
+
+/* Hover Effects for Sections */
+.intro input, .food-delivery .info-box {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.intro input:hover, .food-delivery .info-box:hover {
+    transform: scale(1.05); /* Scale up elements */
+    background-color: rgba(255, 0, 0, 0.1); /* Change background color slightly */
+}
+
+/* Cursor Change when hovering over Interactive elements */
+.intro input:focus, .food-delivery .info-box:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+/* Section Styling */
+header {
+    background-color: #D32F2F;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.intro input {
+    padding: 12px;
+    width: 300px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s;
+    margin-right: 15px; /* Space between the two inputs */
+}
+
+.intro input:focus {
+    background-color: #FFC107; /* Focus color */
+    color: #333;
+}
+
+/* Media query for responsive layout */
+@media screen and (max-width: 768px) {
+    .intro input {
+        width: 100%; /* Allow inputs to take full width on smaller screens */
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #D32F2F;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.language-selector {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.language-selector label {
+    font-size: 16px;
+}
+
+.language-selector select {
+    padding: 5px;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Responsive Design for Footer */
+@media screen and (max-width: 768px) {
+    .language-selector, .social-links {
+        text-align: center;
+    }
+
+    .social-links a {
+        margin: 0 8px;
+    }
+}
+
+
+/* Dropdown Styling */
+select {
+    padding: 12px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 250px; /* Adjust width as needed */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dropdown Focus State */
+select:focus {
+    background-color: #FFC107; /* Yellow background on focus */
+    border-color: #D32F2F; /* Red border on focus */
+    color: #333;
+}
+
+/* Styling the dropdown options */
+select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Hover effect on options */
+select option:hover {
+    background-color: #f0f0f0; /* Light grey background when hovering over options */
+}
+
+/* Responsive Styling for Dropdown */
+@media screen and (max-width: 768px) {
+    select {
+        width: 100%; /* Make the dropdown take full width on smaller screens */
+        margin-top: 10px; /* Add some spacing above the dropdown */
+    }
+}

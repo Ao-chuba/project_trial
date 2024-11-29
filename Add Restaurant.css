@@ -1,0 +1,119 @@
+/* Basic styles for Add Restaurant form */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(244, 244, 244, 0.8); /* Light background with transparency */
+    color: #333;
+    background-image: url('/project1-zomato/images/bg.png'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+}
+
+/* Header styles */
+header {
+    background-color: rgba(211, 47, 47, 0.8); /* Transparent red background */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+header .Logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Main content styles */
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for content area */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Add Restaurant form styles */
+.add-restaurant {
+    text-align: center;
+}
+
+.add-restaurant h2 {
+    color: #D32F2F;
+}
+
+form {
+    background-color: rgba(249, 249, 249, 0.9); /* Slightly transparent light background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #b72e2e;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #D32F2F;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+}
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px 20px; /* Add padding to all sides */
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    text-align: center; /* Centers the placeholder text */
+    box-sizing: border-box; /* Ensures padding doesn't overflow the width */
+}
+
+form textarea {
+    resize: vertical; /* Allows vertical resizing of the textarea */
+}

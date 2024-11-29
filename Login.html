@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Login</title>
+    <link rel="stylesheet" href="/project1-zomato/Login.css">
+</head>
+<body>
+    <header>
+        <div class="Logo">
+            <img src="/project1-zomato/images/logo.png" alt="Zomato Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/project1-zomato/index.html">Home</a></li>
+                <li><a href="/project1-zomato/Investor Relations.html">Investor Relations</a></li>
+                <li><a href="/project1-zomato/Add Restaurant.html">Add Restaurant</a></li>
+                <!-- <li><a href="/project1-zomato/Login.html">Login</a></li> -->
+                <li><a href="/project1-zomato/Signup.html">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <label for="username">Email / Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your email or username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <p id="error-message" class="error-message"></p>
+            <p>Don't have an account? <a href="/project1-zomato/Signup.html">Sign up here</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright | All rights reserved</p>
+    </footer>
+
+    <script src="/project1-zomato/Login.js"></script>
+</body>
+</html>
